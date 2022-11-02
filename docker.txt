@@ -1,0 +1,14 @@
+
+
+nginx
+	docker-compose up --force-recreate
+	docker-compose -f docker-compose.yaml -f docker-compose-nginx.yaml up --force-recreate
+	
+	test :
+	  curl -i -X OPTIONS http://localhost:8080/api -H "origin: https://www.example.com"
+	  curl -i -X GET http://localhost:8080/api -H "origin: https://www.example.com" -H "cookie: example-at=AcYBf995tTBVsLtQLvOuLUZXHm2c-XqP8t7SKmhBiQtzy5CAw4h_RF6rXyg6kHrvhb8x4WaLQC6h3mw6a3O3Q9A"
+
+
+aml_frontend
+	mvn spring-boot:build-image -Dspring-boot.build-image.imageName=aml_frontend_sboot
+	docker run -d --name aml_frontend_sboot -p 8080:8080 -t aml_frontend_sboot

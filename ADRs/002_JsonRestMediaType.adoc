@@ -1,0 +1,40 @@
+ADR
+---
+
+
+Decision Record
+~~~~~~~~~~~~~~~
+*Use of JSON media type on requests/responses communication with rest services *
+
+Number
+~~~~~~
+*002*
+
+Date
+~~~~
+10.10.2022
+
+Status
+~~~~~~
+_(proposed, accepted, rejected, deprecated, superseded)_
+
+*accepted*
+
+Context
+~~~~~~~
+_(the issue that we're seeing that is motivating this decision or change)_
+
+This decision record states that the JSON message format is adopted as standard in REST service communication
+
+Decision
+~~~~~~~~
+_(What is the change that we're proposing and/or doing)?_
+
+This decision record states that the JSON message format is adopted as standard in REST service communication
+
+Consequences
+~~~~~~~~~~~~
+_(What becomes easier or more difficult to do because of this change?)_
+
+Standardization of communication
+adoption of mature and flexible message format

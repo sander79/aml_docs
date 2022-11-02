@@ -1,0 +1,45 @@
+ADR
+---
+
+
+Decision Record
+~~~~~~~~~~~~~~~
+*Use of skip/limit strategy for mongoDB based repositories *
+
+Number
+~~~~~~
+*004*
+
+Date
+~~~~
+27.10.2022
+
+Status
+~~~~~~
+_(proposed, accepted, rejected, deprecated, superseded)_
+
+*accepted*
+
+Context
+~~~~~~~
+_(the issue that we're seeing that is motivating this decision or change)_
+
+API Gateway
+https://github.com/curityio/nginx_oauth_proxy_module
+
+https://curity.io/resources/learn/nginx-oauth-proxy-module/
+
+Decision
+~~~~~~~~
+_(What is the change that we're proposing and/or doing)?_
+
+This decision states that the API Gateway is  based on  OAuth Proxy NGINX Module
+
+https://github.com/curityio/nginx_oauth_proxy_module
+
+https://curity.io/resources/learn/nginx-oauth-proxy-module/
+
+Consequences
+~~~~~~~~~~~~
+_(What becomes easier or more difficult to do because of this change?)_
+

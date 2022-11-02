@@ -1,0 +1,12 @@
+
+
+okta	https://www.okta.com/login/
+
+  smproductions79@gmail.com / podas?ghf12
+  sandrodue@tiscali.it		/ 
+
+
+frontend keystore:
+
+keytool -genkey -alias frontend -keypass sanderaml -keystore "C:\devspace\workspace\gianos4d\ZA\sander_frontend_1\src\main\resources\saml\metadata\keystore.jks" -storepass sanderaml -keyalg RSA -validity 360 -keysize 2048
+

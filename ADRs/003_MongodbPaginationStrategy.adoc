@@ -1,0 +1,56 @@
+ADR
+---
+
+
+Decision Record
+~~~~~~~~~~~~~~~
+*Use of skip/limit strategy for mongoDB based repositories *
+
+Number
+~~~~~~
+*003*
+
+Date
+~~~~
+14.10.2022
+
+Status
+~~~~~~
+_(proposed, accepted, rejected, deprecated, superseded)_
+
+*accepted*
+
+Context
+~~~~~~~
+_(the issue that we're seeing that is motivating this decision or change)_
+
+This decision record states that the JSON message format is adopted as standard in REST service communication
+
+Decision
+~~~~~~~~
+_(What is the change that we're proposing and/or doing)?_
+
+This decision states that the strategy to carry out the pagination feature with MongoDB is based on skip/limit strategy
+
+https://www.mongodb.com/blog/post/paging-with-the-bucket-pattern--part-1
+
+  .find().sort("field": 1).skip(<size>*(<page>-1)).limit(<size>)
+  
+Each service returns an  PaginationResponse object
+
+pagination protocol:
+  1. First request with count parameter return AmlPageImpl.totalCount
+  n. request with page,size parameters return AmlPageImpl.content
+
+Consequences
+~~~~~~~~~~~~
+_(What becomes easier or more difficult to do because of this change?)_
+
+skip/limit strategy requires scanning all the docs before reaching the page position. 
+
+cons
+- It becomes slower as the offset increases, response times decline as page numbers increase
+- Due concurrent add or remove, fetch may lead to duplicated or not fetching docs in the result
+
+pros
+- skip/limit strategy allows direct access to a page

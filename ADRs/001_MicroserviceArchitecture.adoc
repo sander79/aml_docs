@@ -1,0 +1,43 @@
+ADR
+---
+
+
+Decision Record
+~~~~~~~~~~~~~~~
+*Adoption of Microservice architecture*
+
+Number
+~~~~~~
+*001*
+
+Date
+~~~~
+10.10.2022
+
+Status
+~~~~~~
+_(proposed, accepted, rejected, deprecated, superseded)_
+
+*accepted*
+
+Context
+~~~~~~~
+_(the issue that we're seeing that is motivating this decision or change)_
+
+This decision record states how and why a microservices architecture has been adopted
+
+Decision
+~~~~~~~~
+_(What is the change that we're proposing and/or doing)?_
+
+The application of a DDD analisys carries out the 3 different services [KYS, risk profile and unexpected]
+Context map explains the bounded context and high level view of domain models.
+The frontend application is separated.
+
+Consequences
+~~~~~~~~~~~~
+_(What becomes easier or more difficult to do because of this change?)_
+
+- Granular decomposition
+- Different scalability of services
+- Separate deployment strategies
