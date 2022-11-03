@@ -1,1 +1,2 @@
 http://localhost:8084/amlKycServices/v2/api-docs
+http://localhost:8084/amlKycServices/swagger-resources/
