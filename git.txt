@@ -4,6 +4,7 @@ github	 sandrodue@tiscali.it
 	
 	
 github personal token -> Settings -> Developer settings -> Personal access tokens (classic)
+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
 	
  git clone git@github.com:sander79/aml_kycServices.git
  git log
